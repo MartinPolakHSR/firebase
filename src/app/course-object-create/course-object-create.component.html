@@ -1,0 +1,11 @@
+<h1>create Object with AngularFireObject</h1>
+
+<ul>
+  <li *ngFor="let course of courses | async">
+    {{course.description}}
+  </li>
+</ul>
+
+<button (click)="createCourseObject()">create Course</button>
+<input [(ngModel)]="newCourse"><br/>
+Key: <input [(ngModel)]="newKey"><br/>

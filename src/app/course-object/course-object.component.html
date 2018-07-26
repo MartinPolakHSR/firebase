@@ -1,0 +1,9 @@
+<h1>Object with AngularFireObject</h1>
+
+<ul>
+  <li>
+    {{(course | async)?.description}}
+  </li>
+</ul>
+<button (click)="getCourseObject()">Get Course Object</button>
+<input [(ngModel)]="key"><br/>

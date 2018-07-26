@@ -1,0 +1,10 @@
+<h1>List with AngularFireList - Push new</h1>
+
+<ul>
+  <li *ngFor="let course of courses | async">
+    {{course.description}}
+  </li>
+</ul>
+
+<button (click)="pushCourse()">Push Course</button>
+<input [(ngModel)]="newCourse"><br/>

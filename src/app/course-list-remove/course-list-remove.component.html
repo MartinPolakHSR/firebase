@@ -1,0 +1,9 @@
+<h1>List with AngularFireList</h1>
+
+<ul>
+  <li *ngFor="let course of courses">
+    {{course.description}} ({{course.key}})
+  </li>
+</ul>
+<button (click)="removeCourse()">Remove Course</button>
+<input [(ngModel)]="toRemoveCourse"><br/>

@@ -1,0 +1,10 @@
+<h1>Update Object with AngularFireObject</h1>
+
+<ul>
+  <li *ngFor="let course of courses">
+    {{course.description}} ({{course.key}})
+  </li>
+</ul>
+<button (click)="updateCourseObject()">Update Course</button>
+<input [(ngModel)]="toUpdateCourse"><br/>
+New Value:<input [(ngModel)]="newValue"><br/>

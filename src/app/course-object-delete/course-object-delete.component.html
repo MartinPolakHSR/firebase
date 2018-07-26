@@ -1,0 +1,10 @@
+<h1>Remove Object with AngularFireObject</h1>
+
+<ul>
+  <li *ngFor="let course of courses">
+    {{course.description}} ({{course.key}})
+  </li>
+</ul>
+<button (click)="removeCourseObject()">Remove Course</button>
+<input [(ngModel)]="toRemoveCourse"><br/>
+
